@@ -18,7 +18,7 @@ and we are showing the libgdx in portion of screen (the above FrameLayout elemen
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="#FF0000"
-        android:foreground="#00FF00"
+        android:textColor="#00FF00"
         android:textSize="40dp"
         android:text="I'm just a TextView here with red background :("/>
 

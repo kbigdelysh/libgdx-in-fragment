@@ -30,7 +30,7 @@ public class MyGdxGame extends ApplicationAdapter {
 		batch.begin();
 
 		//batch.draw(img, 0, 0);
-		font.getData().setScale(7.0f);
+		font.getData().setScale(6.0f);
 		font.draw(batch, "Hello World from libgdx running in a fragment! :)", 100, 300);
 
 		batch.end();
