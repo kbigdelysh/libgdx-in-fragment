@@ -31,7 +31,8 @@ public class MyGdxGame extends ApplicationAdapter {
 		Gdx.gl.glClear(GL20.GL_COLOR_BUFFER_BIT);
 		batch.begin();
 		//batch.draw(img, 0, 0);
-		font.draw(batch, "hello Kamran :)", 400, 400);
+		font.getData().setScale(7.0f);
+		font.draw(batch, "Hello World from libgdx running in a fragment! :)", 300, 400);
 
 		batch.end();
 	}

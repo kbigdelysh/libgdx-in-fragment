@@ -8,11 +8,18 @@
     <FrameLayout
     android:id="@+id/content_framelayout"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="0dp"
+    android:layout_weight="2">
     </FrameLayout>
-
+<!--This TextView is empty and I put it here just to show that the layout has two parts
+and we are showing the libgdx in portion of screen (the above FrameLayout element)-->
     <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hello kamran!"/>
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="#FF0000"
+        android:foreground="#00FF00"
+        android:textSize="40dp"
+        android:text="I'm just a TextView here with red background :("/>
+
 </LinearLayout>
