@@ -21,14 +21,14 @@ public class AndroidLauncher extends FragmentActivity implements  AndroidFragmen
 	public void onCreate (Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 
+        setContentView(R.layout.layout);
 
 		GameFragment frag = new GameFragment();
         //OverlayFragment overlay = new OverlayFragment();
 
 		getSupportFragmentManager().beginTransaction().
-                add(R.id.content_framelayout, frag).
+                replace(R.id.content_framelayout, frag).
                 commit();
-
 
 //        debugOverlayFragment = new DebugOverlayFragment();
 //        getFragmentManager().beginTransaction().
