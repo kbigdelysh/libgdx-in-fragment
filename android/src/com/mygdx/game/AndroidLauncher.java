@@ -12,10 +12,12 @@ public class AndroidLauncher extends FragmentActivity implements  AndroidFragmen
 
         setContentView(R.layout.layout);
 
-		GameFragment frag = new GameFragment();
+        // Create libgdx fragment
+		GameFragment libgdxFragment = new GameFragment();
 
+        // Put it inside the framelayout (which is defined in the layout.xml file).
 		getSupportFragmentManager().beginTransaction().
-                replace(R.id.content_framelayout, frag).
+                add(R.id.content_framelayout, libgdxFragment).
                 commit();
 	}
 

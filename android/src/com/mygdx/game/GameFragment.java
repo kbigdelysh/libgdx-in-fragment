@@ -8,13 +8,12 @@ import android.view.ViewGroup;
 import com.badlogic.gdx.backends.android.AndroidFragmentApplication;
 
 public class GameFragment extends AndroidFragmentApplication{
-    private View fragView;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View temp = initializeForView(new MyGdxGame());
-        return temp;
+        // return the GLSurfaceView on which libgdx is drawing game stuff
+        return initializeForView(new MyGdxGame());
     }
 }
 
